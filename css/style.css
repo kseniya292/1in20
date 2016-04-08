@@ -14,7 +14,7 @@ nav {
 }
 /* to undo bootstrap css*/
 
-.showcase img {
+.showcase img, .callToAction img {
 	width: 100%;
 }
 
