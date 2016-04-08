@@ -4,23 +4,95 @@ body {
 	background-color: yellow;
 }
 
-nav {
-	height: 100px;
-	background-color: white;
-}
-
 .container-fluid {
 	padding: 0px;
 }
 /* to undo bootstrap css*/
 
-.showcase img, .callToAction img {
+nav {
+	height: 100px;
+	background-color: white;
+}
+/*-------------------------------showcase image with text overlay-----------------*/
+.showcase img {
 	width: 100%;
 }
 
+.showcase {
+	text-align: center;
+	position: relative;
+}
 
+.showcase img {
+	/*position: relative;*/
+}
+.textOverlay {
+	position: absolute;
+	width: 100%;
+}
 
+h1 {
+	color: white;
+	font-family: 'Bitter', serif;
+	font-weight: bold;
+	font-style: italic;
+}
 
+p {
+	font-family: 'Open Sans', sans-serif;
+}
+.showcase p {
+	color: white;
+	font-weight: 600;
+	width: 100%;
+}
+#learnMoreButton {
+	text-transform: uppercase;
+	font-weight: 400;
+	font-size: 12px;
+	padding-top: 2%;
+}
+/*-------------------------------story section-----------------*/
+
+.storySection {
+	text-align: center;
+}
+h3 {
+	font-family: 'Bitter', serif;
+	font-weight: 600;
+	font-style: italic;
+}
+
+h4 {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	line-height: 20px;
+	width: 80%;
+	margin: 0 auto;
+}
+h5 {
+	font-family: 'Bitter', serif;
+	font-size: 18px;
+	font-weight: 600;
+	font-style: italic;
+}
+
+.storySection p {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 12px;
+	width: 300px;
+	margin: 0 auto;
+}
+
+/*.story {
+
+	padding: 20px;
+}*/
+
+.callToAction img {
+	width: 100%;
+}
 
 
 }/*--------------------------------------end of mobile style rules-------------------------------------------------------*/
