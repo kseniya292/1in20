@@ -8,10 +8,54 @@ body {
 	padding: 0px;
 }
 /* to undo bootstrap css*/
+header {
+	background-color: #ffffff;
+}
+header img {
+	width: 30%;
+	padding: 20px;
+	position: relative;
 
+}
 nav {
 	height: 100px;
+	display: none;
+	float: right;
+}
+
+nav ul li {
+	border-bottom: 1px solid #4F2211;
+}
+
+nav ul li a {
+	font-family: 'Open Sans', Arial, sans-serif;
+	font-size: 18px;
+	color: #4F2211;
+	padding: 20px;
+	display: block;
+	/*text-align: center;*/
+	text-decoration: none; /* ------ this is removing underline from menu links ------ */
+	font-weight: 700;
+}
+
+#navBtn {
+	width: 40px;
+	height: 40px;
+	line-height: 40px; /* line height is being used to vertically center 1 line...it splits the difference of the total space */
+	display: block;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	text-align: center;
+	color: #451A0B;
+	border: 1px solid #451A0B;
+
+
+	} 
+/* nav {
+	height: 100px;
 	background-color: white;
+} */
 }
 /*-------------------------------showcase image with text overlay-----------------*/
 .showcase img {
@@ -96,11 +140,40 @@ h5 {
 	width: 100%;
 }
 
+/* --- START FOOTER CSS ---*/
+footer {
+	background-color: #72cddc;
+}
+footer p {
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 10px;
+	color: #ffffff;
+	text-align: center;
+	padding: 20px;
+	border-bottom: solid 1px;
+}
 
 }/*--------------------------------------end of mobile style rules-------------------------------------------------------*/
 @media all and (min-width: 700px) {
 
 
+header img {
+	width: 200px;
+}
+
+#navBtn {
+	display: none;
+}
+
+nav {
+	display: block;
+}
+
+nav ul li {
+	display: inline-block;
+	border: 0px;
+}
 
 
 
