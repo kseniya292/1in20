@@ -7,9 +7,9 @@ var imageHeight, textOverlayHeight, imageTop;
 function centerText() {
 	imageHeight = $(".showcase").height();
 	textOverlayHeight = $(".textOverlay").height();
-	imageTop = (imageHeight - textOverlayHeight)/3;
+	imageTop = (imageHeight - textOverlayHeight)/4;
 	$(".textOverlay").css({
-		"top" : imageTop * 2
+		"top" : imageTop * 3.5
 	}); //css
 } // center text
 
