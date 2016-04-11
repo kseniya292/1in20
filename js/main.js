@@ -19,6 +19,11 @@ $(window).resize(function () {
 
 centerText();
 
+$("#navBtn").click(function(){
+		$("nav").slideToggle();
+		$(this).toggleClass("navActive"); 
+	}); // click method
+
 
 
 
