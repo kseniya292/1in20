@@ -17,49 +17,52 @@ header img {
 	position: relative;
 
 }
+
 nav {
 	height: 100px;
 	display: none;
-	float: right;
 }
 
 nav ul li {
-	border-bottom: 1px solid #4F2211;
+	border-bottom: 2px solid #72cddc;
+
 }
 
 nav ul li a {
 	font-family: 'Open Sans', Arial, sans-serif;
-	font-size: 18px;
-	color: #4F2211;
-	padding: 20px;
+	font-size: 12px;
+	color: #000000;
+	padding: 10px;
 	display: block;
-	/*text-align: center;*/
-	text-decoration: none; /* ------ this is removing underline from menu links ------ */
+	text-align: center;
+	text-decoration: none; 
 	font-weight: 700;
+	
+
 }
 
 #navBtn {
 	width: 40px;
 	height: 40px;
-	line-height: 40px; /* line height is being used to vertically center 1 line...it splits the difference of the total space */
+	line-height: 40px;
 	display: block;
 	position: absolute;
-	top: 10px;
-	right: 10px;
+	top: 20px;
+	left: 80%;
 	text-align: center;
-	color: #451A0B;
-	border: 1px solid #451A0B;
+	color: #72cddc;
+	border: 2px solid #72cddc;
+}
 
-
-	} 
 /* nav {
 	height: 100px;
 	background-color: white;
 } */
-}
+
 /*-------------------------------showcase image with text overlay-----------------*/
 .showcase img {
 	width: 100%;
+
 }
 
 .showcase {
@@ -70,10 +73,12 @@ nav ul li a {
 .showcase img {
 	/*position: relative;*/
 }
+
 .textOverlay {
 	position: absolute;
 	width: 100%;
 }
+
 
 h1 {
 	color: white;
@@ -89,6 +94,7 @@ p {
 	color: white;
 	width: 100%;
 }
+
 #learnMoreButton {
 	text-transform: uppercase;
 	font-weight: 400;
@@ -157,7 +163,6 @@ footer p {
 }/*--------------------------------------end of mobile style rules-------------------------------------------------------*/
 @media all and (min-width: 700px) {
 
-
 header img {
 	width: 200px;
 }
@@ -167,7 +172,13 @@ header img {
 }
 
 nav {
+	float: right;
 	display: block;
+}
+
+nav ul {
+	position: absolute;
+	left: 30%;
 }
 
 nav ul li {
@@ -175,10 +186,9 @@ nav ul li {
 	border: 0px;
 }
 
-
-
-
-
+nav ul li a {
+	line-height: 100px;
+}
 
 
 
@@ -209,8 +219,6 @@ h4 {
 	line-height: 34px;
 	width: 50%;
 }
-
-
 
 
 }/*--------------------------------------end of desktop style rules---------------------------------------------------------*/
