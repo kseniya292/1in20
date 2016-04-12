@@ -1,6 +1,12 @@
 $(document).ready(function(){
 	// alert("yea");
 
+$("#navBtn").click(function(){
+		$("nav").slideToggle();
+		$(this).toggleClass("navActive"); 
+	}); // click method
+
+
 
 var imageHeight, textOverlayHeight, imageTop;
 
@@ -18,13 +24,6 @@ $(window).resize(function () {
 	}); //resize
 
 centerText();
-
-$("#navBtn").click(function(){
-		$("nav").slideToggle();
-		$(this).toggleClass("navActive"); 
-	}); // click method
-
-
 
 
 }); //ready method end
