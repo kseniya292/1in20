@@ -215,6 +215,15 @@ p strong {
 	line-height: 15px;
 }
 
+.press-section img {
+	width: 100%;
+}
+
+.press-section .press-story {
+	border-bottom: 2px solid grey;
+	padding-bottom: 20px;
+}
+
 /*------------Call to action image and text and button------------*/
 
 .callToAction {
