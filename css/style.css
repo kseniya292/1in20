@@ -107,20 +107,25 @@ p {
 	text-align: center;
 }
 
+.story-grid {
+	padding-top: 20px;
+}
+
 h3 {
 	font-family: 'Bitter', serif;
 	font-weight: 600;
+	font-size: 20px;
 	font-style: italic;
 	padding-top: 5%;
 }
 
 h4 {
 	font-family: 'Open Sans', sans-serif;
-	font-size: 12px;
+	font-size: 14px;
 	font-weight: bold;
 	line-height: 20px;
-	padding-bottom: 5%;
-	width: 8%;
+	padding-bottom: 3%;
+	width: 60%;
 	margin: 0 auto;
 }
 
@@ -130,7 +135,7 @@ h4 {
 
 h5 {
 	font-family: 'Bitter', serif;
-	font-size: 20px;
+	font-size: 18px;
 	font-weight: 600;
 	font-style: italic;
 	width: 300px;
@@ -146,13 +151,21 @@ h5 {
 	width: 100%;
 }
 
+.story {
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+.story img, .story button {
+	width: 100%;
+}
+
 button {
-	width: 300px;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 20px;
 	font-weight: bold;
 	text-transform: uppercase;
-	background-color: orange;
+	background-color: #f6d356;
 	border: none;
 	padding: 20px;
 	margin-top: 15px;
@@ -166,6 +179,70 @@ h2 {
 	font-weight: bold;
 	font-style: italic;
 }
+
+.textOverlay-other {
+	position: absolute;
+	top: 40%;
+	left: 5%;
+}
+
+.about-text {
+	padding: 40px;
+	line-height: 25px;
+}
+
+p strong {
+	background-color: #fee59a;
+	padding: 3px;
+}
+
+#quote {
+	font-weight: bold;
+	font-style: italic;
+	font-size: 16px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+#blue-bold {
+	font-weight: bold;
+	color: #009dc5;
+	text-decoration: none;
+}
+
+#asterick {
+	font-size: 10px;
+	line-height: 15px;
+}
+
+/*------------Call to action image and text and button------------*/
+
+.callToAction {
+	position: relative;
+	text-align: center;
+}
+
+.textOverlay-withoutButton {
+	position: absolute;
+	top: 0%;
+	color: white;
+	width: 100%;
+	text-align: center;
+}
+
+.textOverlay-withoutButton h3 {
+	margin-top: 0px;
+}
+
+.textOverlay-withoutButton h4 {
+	width: 70%;
+}
+
+.textOverlay-withButton button {
+	width: 334px;
+}
+
+
 
 /* ------------------------------ START FOOTER CSS -----------------------------------*/
 footer {
@@ -181,7 +258,7 @@ footer p {
 	border-bottom: solid 1px;
 }
 
-}/*--------------------------------------end of mobile style rules-------------------------------------------------------*/
+}/*--------------------------------------END OF MOBILE STYLE RULES-------------------------------------------------------*/
 @media all and (min-width: 700px) {
 
 header img {
@@ -211,10 +288,22 @@ nav ul li a {
 	line-height: 100px;
 }
 
+.textOverlay-other {
+	position: absolute;
+	top: 60%;
+	left: 10%;
+}
+
+/*.textOverlay-withButton {
+	position: absolute;
+	top: 0%;
+	color: white;
+	width: 100%;
+	text-align: center;
+}*/
 
 
-
-}/*--------------------------------------end of tablet style rules---------------------------------------------------------*/
+}/*--------------------------------------END OF TABLET STYLE RULES---------------------------------------------------------*/
 @media all and (min-width: 960px) {
 h1, h2 {
 	font-size: 64px;
