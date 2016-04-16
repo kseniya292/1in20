@@ -267,6 +267,22 @@ p strong {
 	padding-bottom: 20px;
 }
 
+/*-------individual bio page--------*/
+.contact-group {
+	text-align: center;
+	padding-top: 40px;
+}
+
+.fa-facebook, .fa-twitter, .fa-instagram {
+	padding: 10px;
+	color: white;
+	background-color: black;
+	font-size: 20px;
+	border-radius: 50%;
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
 
 /*------------Contact page----------------------------------------*/
 
@@ -465,6 +481,14 @@ nav {
 	height: 100px;
 }
 
+p {
+	font-size: 18px;
+	line-height: 28px;
+}
+
+p#quote {
+	font-size: 20px;
+}
 
 .showcase p {
 	font-size: 20px;
