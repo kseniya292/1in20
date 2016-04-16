@@ -36,7 +36,7 @@ header img {
 
 
 nav {
-	height: 100px;
+	height: 200px;
 	display: none;
 }
 
@@ -267,6 +267,106 @@ p strong {
 	padding-bottom: 20px;
 }
 
+
+/*------------Contact page----------------------------------------*/
+
+
+.sub-heading {
+	font-size: 16px;
+	padding-bottom: 20px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.disclaimer {
+	font-style: italic;
+	font-size: 12px;
+	padding-bottom: 20px;
+	font-family: 'Bitter', serif;
+}
+
+.form-area {
+	margin: 0 auto;
+	margin-left: 5%;
+	margin-right: 5%;
+	position: relative;
+	min-height: 800px;
+}
+
+
+
+
+form-area {
+	margin: 0 auto;
+	width: 100%;
+
+}
+
+form div + div {
+	margin-top: 1em;
+}
+
+label {
+	display: inline-block;
+	text-align: right;
+	width: 100%;
+}
+
+input, textarea {
+	font-family: 'Bitter', serif;
+	width: 300px;
+	padding: 10px;
+	border: 1px solid gray;
+	font-style: italic;
+	color: gray;
+	width: 100%;
+
+}
+
+
+.button {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+	text-transform: uppercase;
+	background-color: #f6d356;
+	border: none;
+	padding: 20px;
+	margin-top: 15px;
+	margin-bottom: 70px;
+	color: black;
+	font-style: normal;
+	width: 40%;
+}
+
+.checkbox-text {
+	font-family: 'Bitter', serif;
+	font-size: 14px;
+	color: #00b0d5;
+}
+
+.checkbox {
+	display: inline;
+	width: 30px;
+
+}
+/* --------------------share page -------------------*/
+
+.form-area {
+	min-height: 1000px;
+}
+
+.form1, .form2 {
+	padding: px;
+	border-bottom: 1px solid gray;
+	padding: 20px;
+
+}
+
+.form2 input {
+	display: inline;
+	width: 30px;
+}
+
 /*------------Call to action image and text and button------------*/
 
 .callToAction {
@@ -359,6 +459,10 @@ nav ul li a {
 @media all and (min-width: 960px) {
 h1, h2 {
 	font-size: 64px;
+}
+
+nav {
+	height: 100px;
 }
 
 
