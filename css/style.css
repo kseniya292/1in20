@@ -247,7 +247,11 @@ h2 {
 
 .about-text {
 	padding-top: 40px;
-	line-height: 25px;
+/*	line-height: 25px;*/
+}
+
+.about-text p {
+	line-height: 32px;
 }
 
 p strong {
@@ -275,9 +279,10 @@ p strong {
 }
 
 #asterick {
-	font-size: 12px;
+	font-size: 14px;
 	font-weight: bold;
 	line-height: 20px;
+	padding-top: 20px;
 }
 
 .other-team-members {
@@ -289,7 +294,11 @@ p strong {
 }
 
 .press-section img {
-	width: 100%;
+	width: 50%;
+}
+
+.press-story {
+	padding-top: 20px;
 }
 
 .press-section .press-story {
@@ -543,7 +552,7 @@ a {
  }
 
 p#quote {
-	font-size: 20px;
+	font-size: 22px;
 }
 
 .showcase p {
