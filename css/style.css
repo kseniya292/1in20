@@ -7,6 +7,10 @@
 .container-fluid {
 	padding: 0px;
 }
+
+p {
+	margin: 0px;
+}
 /* to undo bootstrap css*/
 header {
 	background-color: #ffffff;
@@ -103,9 +107,15 @@ h1 {
 	font-style: italic;
 }
 
-p {
+p, a {
 	font-family: 'Open Sans', sans-serif;
 }
+
+a {
+	font-weight: bold;
+	color: #009dc5;
+}
+
 .showcase p {
 	color: white;
 	width: 100%;
@@ -160,6 +170,8 @@ h3 {
 	font-size: 20px;
 	font-style: italic;
 	padding-top: 5%;
+/*	padding-bottom: 5%;*/
+	text-align: center;
 }
 
 h4 {
@@ -178,7 +190,7 @@ h4 {
 
 h5 {
 	font-family: 'Bitter', serif;
-	font-size: 18px;
+	font-size: 22px;
 	font-weight: 600;
 	font-style: italic;
 	width: 300px;
@@ -187,7 +199,7 @@ h5 {
 .storySection p {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 14px;
-	width: 300px;
+/*	width: 300px;*/
 }
 
 .callToAction img {
@@ -223,6 +235,10 @@ h2 {
 	font-style: italic;
 }
 
+.team h5 {
+	margin-bottom: 0px;
+}
+
 .textOverlay-other {
 	position: absolute;
 	top: 40%;
@@ -230,13 +246,18 @@ h2 {
 }
 
 .about-text {
-	padding: 40px;
+	padding-top: 40px;
 	line-height: 25px;
 }
 
 p strong {
 	background-color: #fee59a;
 	padding: 3px;
+}
+
+.team img {
+	width: 100%;
+	padding-top: 12%;
 }
 
 #quote {
@@ -254,8 +275,17 @@ p strong {
 }
 
 #asterick {
-	font-size: 10px;
-	line-height: 15px;
+	font-size: 12px;
+	font-weight: bold;
+	line-height: 20px;
+}
+
+.other-team-members {
+	padding-top: 12%;
+}
+
+.other-team-members p {
+	padding-top: 5%;
 }
 
 .press-section img {
@@ -385,19 +415,37 @@ input, textarea {
 
 /*------------Call to action image and text and button------------*/
 
+
 .callToAction {
+	height: 300px;
+	background-image: url("../images/homepage/callToAction.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
 	position: relative;
 	text-align: center;
 }
 
-.textOverlay-withoutButton {
+.callToAction h3, .callToAction h4 {
+	color: white;
+}
+
+.callToAction h3 {
+	padding-bottom: 1%;
+}
+
+.textOverlay-withButton {
 	position: absolute;
 	top: 0%;
-	color: white;
 	width: 100%;
 	text-align: center;
 }
 
+/*.callToAction button {
+	width: 80%;
+}*/
+
+/*
 .textOverlay-withoutButton h3 {
 	margin-top: 0px;
 }
@@ -408,7 +456,7 @@ input, textarea {
 
 .textOverlay-withButton button {
 	width: 334px;
-}
+}*/
 
 
 
@@ -486,6 +534,14 @@ p {
 	line-height: 28px;
 }
 
+.storySection p {
+	line-height: 20px;
+}
+
+a {
+ 	font-size: 18px;
+ }
+
 p#quote {
 	font-size: 20px;
 }
@@ -498,6 +554,15 @@ p#quote {
 #learnMoreButton {
 	font-size: 20px;
 	padding-top: 5%;
+}
+
+.callToAction {
+	height: 450px;
+}
+
+.callToAction button {
+	width: 35%;
+	font-size: 30px;
 }
 
 h3 {
