@@ -109,6 +109,7 @@ h1 {
 
 p, a {
 	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
 }
 
 a {
@@ -167,7 +168,7 @@ a {
 h3 {
 	font-family: 'Bitter', serif;
 	font-weight: 600;
-	font-size: 20px;
+	font-size: 24px;
 	font-style: italic;
 	padding-top: 5%;
 /*	padding-bottom: 5%;*/
@@ -264,6 +265,11 @@ p strong {
 	padding-top: 12%;
 }
 
+.team-member p {
+	padding-bottom: 12px;
+	padding-top: 2px;
+}
+
 #quote {
 	font-weight: bold;
 	font-style: italic;
@@ -293,18 +299,30 @@ p strong {
 	padding-top: 5%;
 }
 
-.press-section img {
-	width: 50%;
+.press-logo {
+	text-align: center;
+}
+
+.press-story img {
+	width: 60%;
 }
 
 .press-story {
-	padding-top: 20px;
+	margin-top: 10%;
+	margin-bottom: 10%;
+/*	background-color: pink;*/
+	border-bottom: 2px solid grey;
+	padding-bottom: 40px;
 }
 
-.press-section .press-story {
-	border-bottom: 2px solid grey;
-	padding-bottom: 20px;
+.press-story h5 {
+	margin-top: 5%;
 }
+
+.press-story p {
+	padding-bottom: 5%;
+}
+
 
 /*-------individual bio page--------*/
 .contact-group {
@@ -346,9 +364,6 @@ p strong {
 	position: relative;
 	min-height: 800px;
 }
-
-
-
 
 form-area {
 	margin: 0 auto;
@@ -519,6 +534,11 @@ nav ul li a {
 	left: 10%;
 }
 
+.press-story img {
+	width: 100%;
+	margin-top: 70px;
+}
+
 /*.textOverlay-withButton {
 	position: absolute;
 	top: 0%;
@@ -584,6 +604,7 @@ h4 {
 	line-height: 34px;
 	width: 50%;
 }
+
 .sort-by {
 	text-align: right;
 }
