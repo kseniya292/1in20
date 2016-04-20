@@ -154,6 +154,11 @@ p {
 	padding-top: 20px;
 }
 
+.story-page p {
+	font-family: 'Open Sans', sans-serif;
+	margin-top: 25px;
+}
+
 h3 {
 	font-family: 'Bitter', serif;
 	font-weight: 600;
