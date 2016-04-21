@@ -357,18 +357,16 @@ p strong {
 	font-family: 'Bitter', serif;
 }
 
-.form-area {
+.contact-form-area {
 	margin: 0 auto;
-	margin-left: 5%;
-	margin-right: 5%;
 	position: relative;
 	min-height: 800px;
+	width: 100%;
 }
 
-form-area {
-	margin: 0 auto;
-	width: 100%;
 
+.contact-form1 h3 {
+	text-align: left;
 }
 
 form div + div {
@@ -418,11 +416,19 @@ input, textarea {
 	display: inline;
 	width: 30px;
 
+
 }
 /* --------------------share page -------------------*/
 
-.form-area {
+.share-form-area {
 	min-height: 1000px;
+	margin: 0 auto;
+	position: relative;
+	width: 100%;
+}
+
+.form1 h3 {
+	text-align: left;
 }
 
 .form1, .form2 {
@@ -435,6 +441,13 @@ input, textarea {
 .form2 input {
 	display: inline;
 	width: 30px;
+}
+
+.share-checkbox {
+	display: inline;
+	width: 30px;
+	padding: 20px;
+
 }
 
 /*------------Call to action image and text and button------------*/
