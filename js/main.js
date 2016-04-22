@@ -25,5 +25,28 @@ $(window).resize(function () {
 
 centerText();
 
+var windowHeight, disclaimerTextHeight, windowTop;
+
+function centerDisclaimer() {
+	windowHeight = $(window).height();
+	disclaimerTextHeight = $(".disclaimer-overlay-text").height();
+	windowTop = (windowHeight - disclaimerTextHeight)/2;
+	$(".disclaimer-overlay-text").css({
+		"top" : windowTop
+	}); //css
+
+$(window).resize(function () {
+	centerDisclaimer();
+	}); //resize
+
+} //center Disclaimer
+centerDisclaimer();
+
+$(".disclaimer-action").click(function() {
+	$(".disclaimer-overlay").show();
+}); //click
+
+
+
 
 }); //ready method end

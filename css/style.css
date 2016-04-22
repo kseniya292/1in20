@@ -516,6 +516,30 @@ footer p {
 	border-bottom: solid 1px;
 }
 
+
+/*------------disclaimer overlay----------*/
+
+.disclaimer-overlay {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+   	background-color: black;
+   	opacity: .85;
+}
+
+.disclaimer-overlay-text {
+	text-align: center;
+	position: fixed;
+/*	top: 0;*/
+}
+
+.disclaimer-overlay-text p {
+	color: white;
+}
+
 }/*--------------------------------------END OF MOBILE STYLE RULES-------------------------------------------------------*/
 @media all and (min-width: 700px) {
 
