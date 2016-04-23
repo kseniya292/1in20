@@ -22,6 +22,24 @@ header img {
 
 }
 
+.share-button {
+	float: right;
+	line-height: 80px;
+    margin-right: 10px;
+}
+
+.share-button p a {
+	font-family: 'Open Sans', Arial, sans-serif;
+	font-size: 12px;
+	padding: 5px;
+	border: 1px solid;
+
+}
+
+.showcase-bottom {
+	position: absolute;
+	bottom: 0px;
+}
 .border-gradient {
 	width: 100%;
 	height: 50px;
@@ -29,14 +47,9 @@ header img {
 		linear-gradient(
 			transparent, black
 			);
-	position: relative;
-	bottom: 50px;
 
 }
-.paper-image {
-	position: relative;
-	bottom: 50px;
-}
+
 
 
 nav {
@@ -69,7 +82,7 @@ nav ul li a {
 	display: block;
 	position: absolute;
 	top: 20px;
-	left: 80%;
+	left: 50%;
 	text-align: center;
 	color: #72cddc;
 	border: 2px solid #72cddc;
@@ -90,13 +103,20 @@ nav ul li a {
 	position: relative;
 }
 
-.showcase img {
-	/*position: relative;*/
-}
+/* .showcase img {
+	position: relative;
+} */
 
 .textOverlay {
 	position: absolute;
 	width: 100%;
+}
+
+.sig-image {
+	width: 150px;
+	margin-left: auto;
+	margin-right: auto;
+
 }
 
 
@@ -107,7 +127,7 @@ h1 {
 	font-style: italic;
 }
 
-p, a {
+/* p, a {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 16px;
 }
@@ -115,7 +135,7 @@ p, a {
 a {
 	font-weight: bold;
 	color: #009dc5;
-}
+} */
 
 .showcase p {
 	color: white;
@@ -144,17 +164,15 @@ a {
 	display: block;
 	padding: 20px;
 	text-align: center;
-	vertical-align: center;
 }
-.btn-group{
-	line-height: 80px;
-}
+
 .sort-by button {
 	width: 100px;
 	background-color: #ffffff;
 	font-family: 'Open Sans', sans-serif;
 	border: 1px solid grey;
 	border-radius: 0px;
+	margin-top: 0px;
 }
 
 .storySection h3, h4 {
@@ -505,6 +523,7 @@ input, textarea {
 /* ------------------------------ START FOOTER CSS -----------------------------------*/
 footer {
 	background-color: #00b0d5;
+	margin-top: 15px;
 }
 footer p {
 	text-align: center;
@@ -514,6 +533,21 @@ footer p {
 	text-align: center;
 	padding: 20px;
 	border-bottom: solid 1px;
+}
+
+footer div {
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 12px;
+	color: #ffffff;
+	margin-top: 10px;
+}
+
+footer div a {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 12px;
+	text-decoration: none;
+	color: #ffffff;
 }
 
 
@@ -570,6 +604,11 @@ nav ul li a {
 	line-height: 100px;
 }
 
+.share-button p a {
+	line-height: 115px;
+	margin-right: 50px;
+}
+
 .textOverlay-other {
 	position: absolute;
 	top: 60%;
@@ -588,6 +627,22 @@ nav ul li a {
 	width: 100%;
 	text-align: center;
 }*/
+
+footer {
+	position: relative;
+}
+
+.terms-links {
+	position: absolute;
+	bottom: 15px;
+	left: 15px;
+}
+
+.social-links {
+	position: absolute;
+	bottom: 15px;
+	right: 15px;
+}
 
 
 }/*--------------------------------------END OF TABLET STYLE RULES---------------------------------------------------------*/
