@@ -15,7 +15,7 @@ function centerText() {
 	textOverlayHeight = $(".textOverlay").height();
 	imageTop = (imageHeight - textOverlayHeight)/4;
 	$(".textOverlay").css({
-		"top" : imageTop * 3.5
+		"top" : imageTop * 2.6
 	}); //css
 } // center text
 
@@ -42,7 +42,10 @@ $(window).resize(function () {
 } //center Disclaimer
 centerDisclaimer();
 
-$(".disclaimer-action").click(function() {
+$(".read-story-button").click(function() {
+	event.preventDefault();
+	var storyLink = $(this).attr("href");
+	$(".bigCTA").attr("href", storyLink);
 	$(".disclaimer-overlay").show();
 }); //click
 

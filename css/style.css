@@ -149,6 +149,11 @@ a {
 	padding-top: 2%;
 }
 
+.fa-chevron-down {
+	color: white;
+	font-size: 14px;
+}
+
 .pagination-link {
 	height: 30px;
 	display: block;
@@ -214,10 +219,10 @@ h4 {
 
 h5 {
 	font-family: 'Bitter', serif;
-	font-size: 22px;
+	font-size: 20px;
 	font-weight: 600;
 	font-style: italic;
-	width: 300px;
+	width: 100%;
 }
 
 .storySection p {
@@ -239,17 +244,39 @@ h5 {
 	width: 100%;
 }
 
-button {
+.story a:hover {
+	background-color: #00b0d5;	
+}
+
+a.read-story-button {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 20px;
 	font-weight: bold;
 	text-transform: uppercase;
+	text-decoration: none;
+	background-color: #f6d356;
+	color: black;
+	border: none;
+	text-align: center;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+a.read-story-button {
+	display: block;
+	margin-top: 20px;
+	margin-bottom: 80px;
+}
+
+.share-story-button {
 	background-color: #f6d356;
 	border: none;
-	padding: 20px;
-	margin-top: 15px;
-	margin-bottom: 70px;
 }
+
+/*.textOverlay-withButton button {
+	width: 300px;
+}*/
+
 
 /*----------------------------about page-----------------------------------*/
 h2 {
@@ -523,7 +550,7 @@ input, textarea {
 /* ------------------------------ START FOOTER CSS -----------------------------------*/
 footer {
 	background-color: #00b0d5;
-	margin-top: 15px;
+/*	margin-top: 15px;*/
 }
 footer p {
 	text-align: center;
