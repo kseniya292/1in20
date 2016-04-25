@@ -15,7 +15,7 @@ function centerText() {
 	textOverlayHeight = $(".textOverlay").height();
 	imageTop = (imageHeight - textOverlayHeight)/4;
 	$(".textOverlay").css({
-		"top" : imageTop * 2.6
+		"top" : imageTop * 2.8
 	}); //css
 } // center text
 
