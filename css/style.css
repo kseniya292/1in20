@@ -12,11 +12,12 @@ p {
 	margin: 0px;
 }
 /* to undo bootstrap css*/
+
 header {
 	background-color: #ffffff;
 }
 header img {
-	width: 30%;
+	width: 40%;
 	padding: 20px;
 	position: relative;
 
@@ -30,10 +31,16 @@ header img {
 
 .share-button p a {
 	font-family: 'Open Sans', Arial, sans-serif;
-	font-size: 12px;
+	font-size: 14px;
 	padding: 5px;
-	border: 1px solid;
+	border: 2px solid;
+	color: #00b0d5;
+}
 
+.share-button p a:hover {
+	text-decoration: none;
+	background-color: #00b0d5;
+	color: white;
 }
 
 .showcase-bottom {
@@ -51,7 +58,6 @@ header img {
 }
 
 
-
 nav {
 	height: 200px;
 	display: none;
@@ -64,16 +70,21 @@ nav ul li {
 
 nav ul li a {
 	font-family: 'Open Sans', Arial, sans-serif;
-	font-size: 12px;
+	font-size: 14px;
 	color: #000000;
 	padding: 10px;
 	display: block;
 	text-align: center;
 	text-decoration: none; 
 	font-weight: 700;
-	
 
 }
+
+nav ul li a:hover {
+	text-decoration: none;
+	background-color: #00b0d5;
+}
+
 
 #navBtn {
 	width: 40px;
@@ -82,10 +93,15 @@ nav ul li a {
 	display: block;
 	position: absolute;
 	top: 20px;
-	left: 50%;
+	left: 45%;
 	text-align: center;
-	color: #72cddc;
-	border: 2px solid #72cddc;
+	color: #00b0d5;
+	border: 2px solid #00b0d5;
+}
+
+#navBtn:hover {
+	background-color: #00b0d5;
+	color: white;
 }
 
 /* nav {
@@ -102,10 +118,6 @@ nav ul li a {
 	text-align: center;
 	position: relative;
 }
-
-/* .showcase img {
-	position: relative;
-} */
 
 .textOverlay {
 	position: absolute;
@@ -155,12 +167,12 @@ a {
 }
 
 .pagination-link {
-	height: 30px;
+	height: 100%;
 	display: block;
 	text-align: center;
 	font-family: 'Open Sans', sans-serif;
 	color: grey;
-	margin-bottom: 20px;
+	margin-bottom: 40px;
 }
 /*-------------------------------story section-----------------*/
 
@@ -231,10 +243,6 @@ h5 {
 /*	width: 300px;*/
 }
 
-.callToAction img {
-	width: 100%;
-}
-
 .story {
 	padding-left: 50px;
 	padding-right: 50px;
@@ -248,7 +256,16 @@ h5 {
 	background-color: #00b0d5;	
 }
 
-a.read-story-button {
+.callToAction img {
+	width: 100%;
+}
+
+.textOverlay-withButton p {
+	text-align: center;
+	margin: auto;
+}
+
+.read-story-button a {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 20px;
 	font-weight: bold;
@@ -262,17 +279,33 @@ a.read-story-button {
 	padding-bottom: 15px;
 }
 
-a.read-story-button {
+.read-story-button a {
 	display: block;
 	margin-top: 20px;
 	margin-bottom: 80px;
 }
 
-.share-story-button {
+p.share-story-button {
 	background-color: #f6d356;
 	border: none;
+	width: 300px;
+	margin-top: 20px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	font-size: 20px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
 }
 
+p.share-story-button a {
+	color: black;
+	text-decoration: none;
+}
+
+p.share-story-button:hover {
+	background-color: #00b0d5;		
+}
 /*.textOverlay-withButton button {
 	width: 300px;
 }*/
@@ -557,9 +590,12 @@ footer p {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 10px;
 	color: #ffffff;
-	text-align: center;
 	padding: 20px;
-	border-bottom: solid 1px;
+	line-height: 18px;
+}
+
+#footer-text {
+	border-bottom: solid 1px white;
 }
 
 footer div {
@@ -575,6 +611,10 @@ footer div a {
 	font-size: 12px;
 	text-decoration: none;
 	color: #ffffff;
+}
+
+.social-links {
+	padding-bottom: 40px;
 }
 
 
@@ -599,6 +639,24 @@ footer div a {
 
 .disclaimer-overlay-text p {
 	color: white;
+}
+
+.continue-button {
+	background-color: #f6d356;
+	border: none;
+	width: 300px;
+	margin: auto;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.continue-button a {
+	color: black;
+	font-size: 24px;
 }
 
 }/*--------------------------------------END OF MOBILE STYLE RULES-------------------------------------------------------*/
@@ -656,19 +714,32 @@ nav ul li a {
 }*/
 
 footer {
+/*	position: relative;*/
+}
+
+.footer-bottom {
 	position: relative;
+	height: 100px;
 }
 
 .terms-links {
 	position: absolute;
-	bottom: 15px;
-	left: 15px;
-}
+	bottom: 0px;
+	left: 0px;
+	float: left;
+	display: inline-block;
+	height: 100px;
+	line-height: 100px;
 
+}
 .social-links {
 	position: absolute;
-	bottom: 15px;
-	right: 15px;
+	bottom: 0px;
+	right: 0px;
+	display: inline-block;
+	float: right;
+	height: 100px;
+	line-height: 100px;
 }
 
 
@@ -713,8 +784,19 @@ p#quote {
 	height: 450px;
 }
 
-.callToAction button {
+/*.callToAction button {
 	width: 35%;
+	font-size: 30px;
+}*/
+
+p.share-story-button {
+	width: 400px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	line-height: 40px;
+}
+
+p.share-story-button a {
 	font-size: 30px;
 }
 
