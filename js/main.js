@@ -7,7 +7,6 @@ $("#navBtn").click(function(){
 	}); // click method
 
 
-
 var imageHeight, textOverlayHeight, imageTop;
 
 function centerText() {
@@ -25,15 +24,40 @@ $(window).resize(function () {
 
 centerText();
 
-var windowHeight, disclaimerTextHeight, windowTop;
 
+var windowHeight, overlayTextHeight, overlayTop;
+
+function resizeOverlay() {
+	windowHeight = $(window).height();
+	$(".disclaimer-overlay").css({
+		"height" : windowHeight + "px"
+	}); //css
+
+	overlayTextHeight = $(".disclaimer-overlay-text").height();
+	overlayTop = (windowHeight-overlayTextHeight)/2;
+	$(".disclaimer-overlay-text").css({
+		"margin-top" : overlayTop + "px"
+	}); //css
+} //resizeOverlay
+
+$(window).resize(function() {
+	resizeOverlay();
+}); //resize
+
+resizeOverlay();
+
+
+
+
+/*
 function centerDisclaimer() {
 	windowHeight = $(window).height();
 	disclaimerTextHeight = $(".disclaimer-overlay-text").height();
 	windowTop = (windowHeight - disclaimerTextHeight)/2;
 	$(".disclaimer-overlay-text").css({
-		"top" : windowTop
+		"bottom" : windowTop
 	}); //css
+
 
 $(window).resize(function () {
 	centerDisclaimer();
@@ -41,6 +65,8 @@ $(window).resize(function () {
 
 } //center Disclaimer
 centerDisclaimer();
+
+*/
 
 $(".read-story-button").click(function() {
 	event.preventDefault();
