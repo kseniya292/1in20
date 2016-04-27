@@ -27,6 +27,8 @@ centerText();
 
 var windowHeight, overlayTextHeight, overlayTop;
 
+
+
 function resizeOverlay() {
 	windowHeight = $(window).height();
 	$(".disclaimer-overlay").css({
@@ -48,25 +50,24 @@ resizeOverlay();
 
 
 
-
-/*
-function centerDisclaimer() {
-	windowHeight = $(window).height();
-	disclaimerTextHeight = $(".disclaimer-overlay-text").height();
-	windowTop = (windowHeight - disclaimerTextHeight)/2;
-	$(".disclaimer-overlay-text").css({
-		"bottom" : windowTop
-	}); //css
+// function centerDisclaimer() {
+// 	windowHeight = $(window).height();
+// 	disclaimerTextHeight = $(".disclaimer-overlay-text").height();
+// 	windowTop = (windowHeight - disclaimerTextHeight)/2;
+// 	$(".disclaimer-overlay-text").css({
+// 		"bottom" : windowTop
+// 	}); //css
 
 
-$(window).resize(function () {
-	centerDisclaimer();
-	}); //resize
+// $(window).resize(function () {
+// 	centerDisclaimer();
+// 	}); //resize
 
-} //center Disclaimer
-centerDisclaimer();
+// } //center Disclaimer
+// centerDisclaimer();
 
-*/
+
+
 
 $(".read-story-button").click(function() {
 	event.preventDefault();
