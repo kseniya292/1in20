@@ -76,9 +76,24 @@ $(".read-story-button").click(function() {
 	$(".disclaimer-overlay").show();
 }); //click
 
-$(".pagination-link").click(function () {
-    $(this).prev("#hidden").slideToggle(500);
-  });
+currentSet = 0;
+
+	// i'm bundling the show functionality here so we can reuse it every time we want to show a new block
+	function showContentSet(targetSet) {
+		$(".expand:eq(" + targetSet + ")").slideToggle(1000);
+		currentSet++;
+	} // showContentSet
+
+	// turn on first set immediately
+	showContentSet(currentSet);
+
+	// click on the link to show the next set
+	$(".pagination-link").click(function(event) {
+		// since the click is coming from an empty anchor href, we need to prevent the default behavior of the browser
+		// allowing it to handle the custom event response
+		event.preventDefault();
+		showContentSet(currentSet);
+	}); // click
 
 
 }); //ready method end
