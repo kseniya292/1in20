@@ -46,6 +46,7 @@ header img {
 .showcase-bottom {
 	position: absolute;
 	bottom: 0px;
+	width: 100%;
 }
 .border-gradient {
 	width: 100%;
@@ -124,11 +125,31 @@ nav ul li a:hover {
 	width: 100%;
 }
 
+#play-icon-border {
+	position: relative;
+	text-align: center;
+	height: 60px;
+	width: 60px;
+	border: 2px solid #f6d356;
+	border-radius: 50%;
+	display: inline-block;
+}
+.play-icon {
+	color: #f6d356;
+	font-size: 32px;
+	padding-top: 13px;
+	padding-left: 8px;
+/*	width: 70%;
+	height: 70%;
+	top: 0;
+	left: 0;
+	position: absolute;*/
+}
+
 .sig-image {
 	width: 150px;
 	margin-left: auto;
 	margin-right: auto;
-
 }
 
 
@@ -137,17 +158,8 @@ h1 {
 	font-family: 'Bitter', serif;
 	font-weight: bold;
 	font-style: italic;
+	font-size: 26px;
 }
-
-/* p, a {
-	font-family: 'Open Sans', sans-serif;
-	font-size: 16px;
-}
-
-a {
-	font-weight: bold;
-	color: #009dc5;
-} */
 
 .showcase p {
 	color: white;
@@ -163,7 +175,7 @@ a {
 
 .fa-chevron-down {
 	color: white;
-	font-size: 14px;
+	font-size: 20px;
 }
 
 .pagination-link {
@@ -176,6 +188,10 @@ a {
 }
 
 .expand {
+	display: none;
+}
+
+#learn-more {
 	display: none;
 }
 /*-------------------------------story section-----------------*/
@@ -213,7 +229,7 @@ a {
 h3 {
 	font-family: 'Bitter', serif;
 	font-weight: 600;
-	font-size: 24px;
+	font-size: 22px;
 	font-style: italic;
 	padding-top: 5%;
 /*	padding-bottom: 5%;*/
@@ -258,7 +274,7 @@ h5 {
 }
 
 .story a:hover {
-	background-color: #00b0d5;	
+	background-color: #F9E393;	
 }
 
 .callToAction img {
@@ -344,6 +360,7 @@ h2 {
 	font-family: 'Bitter', serif;
 	font-weight: bold;
 	font-style: italic;
+	font-size: 26px;
 }
 
 .team h5 {
@@ -380,6 +397,19 @@ p strong {
 	padding-top: 2px;
 }
 
+.more-about-link a {
+	color: #009dc5;
+}
+
+.more-about-link a:hover {
+	text-decoration: none;
+	color: #63dfff;
+}
+
+.more-about-link a:visited {
+	text-decoration: none;	
+}
+
 #quote {
 	font-weight: bold;
 	font-style: italic;
@@ -405,7 +435,15 @@ p strong {
 	padding-top: 12%;
 }
 
-.other-team-members p {
+/*.other-team-members p {
+	padding-top: 5%;
+}*/
+
+p.title {
+	padding-top: 5%;
+}
+
+#organization {
 	padding-top: 5%;
 }
 
@@ -443,16 +481,12 @@ p strong {
 .fa-facebook, .fa-twitter, .fa-instagram {
 	padding: 10px;
 	color: white;
-	background-color: black;
+	border: 2px solid white;
 	font-size: 20px;
 	border-radius: 50%;
 	margin-top: 10px;
 	margin-left: 10px;
 	margin-right: 10px;
-}
-
-.fb {
-
 }
 
 /*
@@ -465,9 +499,15 @@ p strong {
 
 /*------------Contact page----------------------------------------*/
 
+.share-heading {
+	font-family: 'Bitter', serif;
+	font-style: italic;
+	font-size: 18px;
+	padding-top: 10%;
+	padding-bottom: 10%;
+}
 
 .sub-heading {
-	font-size: 16px;
 	padding-bottom: 20px;
 	font-family: 'Open Sans', sans-serif;
 }
@@ -677,8 +717,8 @@ footer div a {
 	left: 0;
 	/*height: 100%;*/
 	width: 100%;
-   	background-color: black;
-   	opacity: .85;
+   	background-color: #121212;
+   	opacity: .92;
 }
 
 .disclaimer-overlay-text {
@@ -709,10 +749,28 @@ footer div a {
 	font-size: 24px;
 }
 
+.continue-button a:hover {
+	text-decoration: none;
+}
+
+.continue-button:hover {
+	background-color: yellow;
+}
+
+.return-link a {
+	font-style: italic;
+}
+
+.return-link a:hover {
+	text-decoration: none;
+}
+
 }/*--------------------------------------END OF MOBILE STYLE RULES-------------------------------------------------------*/
 @media all and (min-width: 700px) {
 
-
+h1 {
+	font-size: 40px;
+}
 
 .share-button p a {
 	line-height: 115px;
@@ -725,14 +783,18 @@ footer div a {
 	left: 10%;
 }
 
+#organization {
+	padding-top: 0;
+}
+
 .press-story img {
 	width: 100%;
 	margin-top: 70px;
 }
 
 .story {
-	padding-left: 20px;
-	padding-right: 20px;
+	padding-left: 30px;
+	padding-right: 30px;
 }
 
 /*.textOverlay-withButton {
@@ -833,11 +895,40 @@ p#quote {
 	margin-top: 36px;
 }
 
+#learn-more {
+	display: block;
+}
+
 #learnMoreButton {
 	font-size: 20px;
 	padding-top: 5%;
+	padding-bottom: 1%;
 }
 
+.fa-chevron-down {
+	font-size: 30px;
+}
+
+#play-icon-border {
+	position: relative;
+	text-align: center;
+	height: 150px;
+	width: 150px;
+	border: 2px solid #f6d356;
+	border-radius: 50%;
+	display: inline-block;
+}
+.play-icon {
+	color: #f6d356;
+	font-size: 80px;
+	padding-top: 30px;
+	padding-left: 15px;
+/*	width: 70%;
+	height: 70%;
+	top: 0;
+	left: 0;
+	position: absolute;*/
+}
 .callToAction {
 	height: 450px;
 }

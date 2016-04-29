@@ -14,7 +14,7 @@ function centerText() {
 	textOverlayHeight = $(".textOverlay").height();
 	imageTop = (imageHeight - textOverlayHeight)/4;
 	$(".textOverlay").css({
-		"top" : imageTop * 2.8
+		"top" : imageTop * 3.2
 	}); //css
 } // center text
 
@@ -28,6 +28,7 @@ centerText();
 var windowHeight, overlayTextHeight, overlayTop;
 
 
+$(".read-story-button").click(function() {
 
 function resizeOverlay() {
 	windowHeight = $(window).height();
@@ -48,7 +49,7 @@ $(window).resize(function() {
 
 resizeOverlay();
 
-
+}); //click
 
 // function centerDisclaimer() {
 // 	windowHeight = $(window).height();
