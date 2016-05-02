@@ -5,7 +5,7 @@
     .form-all{
         font-family: 'Bitter', serif;
   font-weight: 600;
-  font-size: 24px;
+  font-size: 20px;
   font-style: italic;
   padding-top: 5%;
   text-align: center;
@@ -79,12 +79,12 @@
     white-space: normal;
 }
 
-/* 
+
     By: Ibrahim
     Ticket: http://www.jotform.com/answers/770434
     Asana: https://app.asana.com/0/79151859578366/90318654662926
- */
- /*
+ 
+ 
 .form-line-column .form-sub-label {
     white-space: normal;
 }
@@ -174,7 +174,7 @@
     display:inline-block;
 }
 .form-multiple-column .form-radio-item, .form-multiple-column .form-checkbox-item{
-    width:150px;
+    width: 50px;
 }
 
 .form-radio-item label, .form-checkbox-item label{
@@ -208,7 +208,7 @@
 .form-button-magenta{
 	border: 1px solid magenta;
 }
-*/
+
 .form-screen-message{
     width: 260px;
     height: 100px;
