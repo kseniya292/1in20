@@ -615,6 +615,55 @@ input, textarea {
 
 }
 
+.qq-upload-button {
+    background-color: #f6d356;
+    border: none;
+    width: 300px;
+    margin-top: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 0px;
+}
+
+    p.qq-upload-button {
+    background-color: #f6d356;
+    border: none;
+    width: 300px;
+    margin-top: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+p.qq-upload-button a {
+    color: black;
+    text-decoration: none;
+}
+
+.qq-upload-button:hover {
+    background-color: #00b0d5;      
+}
+
+.form-submit-button {
+	background-color: #f6d356;
+	border: none;
+	width: 300px;
+	margin-top: 20px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	font-size: 20px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
 /*------------resources--------------*/
 
 .resources h3 {
