@@ -6328,8 +6328,8 @@ var JotForm = {
      */
     setStripeSettings: function (pubkey, add_qid) {
         // skip on edit mode (b#439725)
-        if (["edit", "inlineEdit", "submissionToPDF"].indexOf(document.get.mode) > -1
-            && document.get.sid) {
+        if ((["edit", "inlineEdit", "submissionToPDF"].indexOf(document.get.mode) > -1
+            && document.get.sid) || location.href.indexOf('edit') > -1) {
             return;
         }
         //check if the Stripe v1 library is loaded
@@ -9095,7 +9095,7 @@ var JotForm = {
                 }).any();
             case "number":
                 return $$('#id_' + id + ' input').collect(function (e) {
-                    return e.value && e.value != 0;
+                    return e.value.length > 0;
                 }).any();
             case "birthdate":
                 return JotForm.getBirthDate(id);

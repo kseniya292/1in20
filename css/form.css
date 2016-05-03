@@ -949,34 +949,23 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0064f0', end
 /**
  * Multiple file upload styling
  */
-.qq-uploader { position:relative; width:224px;}
-
-.qq-upload-button {
-    /*background: none repeat scroll 0 0 #B5B5B5;*/
-    background: #ffa84c; /* old browsers */
-    background: -moz-linear-gradient(top, #FBCB5D 0%, #EFA003 100%); /* firefox */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#FBCB5D), color-stop(100%,#EFA003)); /* webkit */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FBCB5D', endColorstr='#EFA003',GradientType=0 ); /* ie */
-    color: #FFFFFF;
-    display: block;
-    font-size:16px;
-    padding: 8px 0;
-    text-align: center;
-    text-shadow: 0 -1px #C64F00;
-    border: 1px solid #C64F00;
-    -moz-border-radius:5px 5px;
-    -webkit-border-radius:5px 5px;
-    border-radius:5px 5px;
+.qq-uploader { 
+    position:relative; 
+    width:224px;
 }
+
+
+
 
 .qq-upload-button-hover {
     background: #ff7b0d; /* old browsers */
     background: -moz-linear-gradient(top, #ff7b0d 0%, #ffa84c 100%); /* firefox */
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ff7b0d), color-stop(100%,#ffa84c)); /* webkit */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff7b0d', endColorstr='#ffa84c',GradientType=0 ); /* ie */
+   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff7b0d', endColorstr='#ffa84c',GradientType=0 ); /* ie */
    
 }
 .qq-upload-button-focus {outline:1px dotted black;}
+
 
 .qq-upload-delete{
     display:none;
