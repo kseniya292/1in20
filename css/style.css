@@ -584,6 +584,18 @@ input, textarea {
 
 }
 /* --------------------share page -------------------*/
+.section {
+	padding-bottom: 50px;
+	border-bottom:1px solid #ccc;
+}
+
+.section-content {
+	margin-left:  10%;
+	margin-right: 10%;
+}
+.form-header-group {
+	border: none;
+}
 
 .share-form-area {
 	min-height: 1000px;
@@ -592,31 +604,62 @@ input, textarea {
 	width: 100%;
 }
 
-.form1 h3 {
+.form-header {
+	font-size: 20px;
+
+}
+
+.form-label {
+	width: 100%;
+	font-size: 12px;
+	font-family: 'Open Sans', sans-serif;
+	font-style: normal;
+}
+
+.form-checkbox-item {
+	width: 100%;
+	position: relative;
+	margin-bottom: 30px;
+}
+
+.form-checkbox {
+	width: 20px;
+	margin-right: 20px;
+	position: absolute;
+}
+
+#label_input_9_0 {
+	float: left;
 	text-align: left;
+	font-size: 12px;
+	font-family: 'Open Sans', sans-serif;
+	font-style:normal;
+	position: absolute;
+	margin-left: 20px;
+	line-height: 22px;
 }
 
-.form1, .form2 {
-	padding: px;
-	border-bottom: 1px solid gray;
-	padding: 20px;
-
+#label_input_7_0 {
+	font-size: 12px;
+	font-family: 'Open Sans', sans-serif;
+	font-style:normal;
+	width: 100%;
+	margin-left: 10px;
+	margin-right: 10px;
 }
 
-.form2 input {
-	display: inline;
-	width: 30px;
+#label_input_7_0 a {
+	font-size: 12px;
 }
 
-.share-checkbox {
-	display: inline;
-	width: 30px;
-	padding: 20px;
-
+#label_4, #label_7 {
+	font-size: 14px;
 }
 
 .qq-upload-button {
-    background-color: #f6d356;
+    /*background-color: #f6d356;*/
+    background: #f6d356 !important;
+    color: black;
     border: none;
     width: 300px;
     margin-top: 20px;
@@ -625,31 +668,17 @@ input, textarea {
     font-size: 20px;
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
+    font-style: normal;
+    text-shadow: none;
     text-transform: uppercase;
     border-radius: 0px;
 }
 
-    p.qq-upload-button {
-    background-color: #f6d356;
-    border: none;
-    width: 300px;
-    margin-top: 20px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    font-size: 20px;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: bold;
-    text-transform: uppercase;
-}
-
-p.qq-upload-button a {
-    color: black;
-    text-decoration: none;
-}
-
 .qq-upload-button:hover {
-    background-color: #00b0d5;      
+    background: #F9E393 !important;      
 }
+
+
 
 .form-submit-button {
 	background-color: #f6d356;
@@ -662,8 +691,75 @@ p.qq-upload-button a {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: bold;
 	text-transform: uppercase;
+	font-style: normal;
 }
 
+.form-submit-button:hover {
+	background: #F9E393 !important;
+}
+
+.form-textarea {
+font-family: 'Open Sans', Arial, sans-serif;	
+font-style: normal;
+font-size: 12px;
+}
+
+
+#input_15_area {
+	width: 100px;
+	float: left;
+}
+
+.form-sub-lable-container, #input_15_phone {
+	width: 50%;
+}
+
+.form-sub-label-container {
+	width: 100%;
+	display: inline-block;
+	margin-bottom: 10px;
+}
+
+.form-textbox {
+	height: 40px;
+	font-family: 'Open Sans', Arial, sans-serif;
+	font-style: normal;
+	font-size: 12px;
+	width: 100%;
+}
+
+.form-input-wide {
+	width: 100%;
+}
+
+
+::-webkit-input-placeholder {
+   font-size: 11px;
+	width: 200px;
+	font-family: 'Open Sans', Arial, sans-serif;
+	font-style: italic;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   font-size: 11px;
+	width: 200px;
+	font-family: 'Open Sans', Arial, sans-serif; 
+	font-style: italic;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   font-size: 11px;
+	width: 200px;
+	font-family: 'Open Sans', Arial, sans-serif;  
+	font-style: italic;
+}
+
+:-ms-input-placeholder {  
+   font-size: 11px;
+	width: 200px;
+	font-family: 'Open Sans', Arial, sans-serif;
+	font-style: italic;
+}
 /*------------resources--------------*/
 
 .resources h3 {
@@ -702,23 +798,6 @@ p.qq-upload-button a {
 	width: 100%;
 	text-align: center;
 }
-
-/*.callToAction button {
-	width: 80%;
-}*/
-
-/*
-.textOverlay-withoutButton h3 {
-	margin-top: 0px;
-}
-
-.textOverlay-withoutButton h4 {
-	width: 70%;
-}
-
-.textOverlay-withButton button {
-	width: 334px;
-}*/
 
 
 
@@ -762,7 +841,7 @@ footer div a {
 
 /*------------disclaimer overlay----------*/
 
-.disclaimer-overlay {
+.disclaimer-overlay, .form-overlay {
 	display: none;
 	position: fixed;
 	top: 0;
@@ -773,13 +852,13 @@ footer div a {
    	opacity: .92;
 }
 
-.disclaimer-overlay-text {
+.disclaimer-overlay-text, .form-overlay-text {
 	text-align: center;
 	position: fixed;
 /*	top: 0;*/
 }
 
-.disclaimer-overlay-text p {
+.disclaimer-overlay-text, .form-overlay-text p {
 	color: white;
 }
 

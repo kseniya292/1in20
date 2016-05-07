@@ -7,6 +7,9 @@ $("#navBtn").click(function(){
 	}); // click method
 
 
+
+//story disclaimer overlay code
+
 var imageHeight, textOverlayHeight, imageTop;
 
 function centerText() {
@@ -51,24 +54,6 @@ resizeOverlay();
 
 }); //click
 
-// function centerDisclaimer() {
-// 	windowHeight = $(window).height();
-// 	disclaimerTextHeight = $(".disclaimer-overlay-text").height();
-// 	windowTop = (windowHeight - disclaimerTextHeight)/2;
-// 	$(".disclaimer-overlay-text").css({
-// 		"bottom" : windowTop
-// 	}); //css
-
-
-// $(window).resize(function () {
-// 	centerDisclaimer();
-// 	}); //resize
-
-// } //center Disclaimer
-// centerDisclaimer();
-
-
-
 
 $(".read-story-button").click(function() {
 	event.preventDefault();
@@ -77,6 +62,9 @@ $(".read-story-button").click(function() {
 	$(".disclaimer-overlay").show();
 }); //click
 
+
+
+//to show more stories
 currentSet = 0;
 
 	// i'm bundling the show functionality here so we can reuse it every time we want to show a new block
