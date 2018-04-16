@@ -478,12 +478,29 @@ p.title {
 	padding-top: 40px;
 }
 
-.fa-facebook, .fa-twitter, .fa-instagram {
-	padding: 10px;
+.social-links {
+/*	background-color: blue;*/
+}
+
+.social-links a {
+/*	padding: 10px;*/
+	display: block;
 	color: white;
 	border: 2px solid white;
 	font-size: 20px;
 	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+}
+
+.social-links ul {
+	display: inline-block;
+	background-color: pink;
+}
+
+.social-links ul li {
+	float: left;
 	margin-top: 10px;
 	margin-left: 10px;
 	margin-right: 10px;
@@ -838,7 +855,6 @@ footer div a {
 	padding-bottom: 40px;
 }
 
-
 /*------------disclaimer overlay----------*/
 
 .disclaimer-overlay, .form-overlay {
@@ -946,17 +962,18 @@ footer {
 }
 
 .terms-links {
-	position: absolute;
+/*	position: absolute;*/
 	bottom: 0px;
 	left: 0px;
 	float: left;
 	display: inline-block;
 	height: 100px;
 	line-height: 100px;
+/*	background-color: yellow;*/
 
 }
 .social-links {
-	position: absolute;
+/*	position: absolute;*/
 	bottom: 0px;
 	right: 0px;
 	display: inline-block;
